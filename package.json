@@ -1,0 +1,22 @@
+{
+  "name": "grandmairenicolas_3_07112020",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dutdut77/GRANDMAIRENicolas_3_07112020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dutdut77/GRANDMAIRENicolas_3_07112020/issues"
+  },
+  "homepage": "https://github.com/Dutdut77/GRANDMAIRENicolas_3_07112020#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
