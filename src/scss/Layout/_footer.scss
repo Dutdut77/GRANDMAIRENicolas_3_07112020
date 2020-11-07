@@ -1,0 +1,49 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background: $color-footer;
+  padding: 20px 20px 30px 20px;
+}
+
+.footer-titre {
+  background: $color-footer;
+  font-family: map-get($font-family, Shrikhand);
+  font-size: map-get($font-size, footer);
+  color: white;
+  margin-bottom: 10px;
+}
+
+.propo {
+  color: white;
+  background: $color-footer;
+  line-height: 1.5em;
+
+  &__heart::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f2e7";    
+    color: white;
+    margin-right : 17px;
+  }
+}
+
+.partenaire {
+  color: white;
+  background: $color-footer;
+  line-height: 1.5em;
+
+  &__heart::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f4c4";    
+    color: white;
+    margin-right : 10px;
+  }
+}
+
+.divers {
+  color: white;
+  background: $color-footer;
+  line-height: 1.5em;
+}

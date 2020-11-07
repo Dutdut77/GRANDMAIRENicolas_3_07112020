@@ -1,0 +1,107 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  padding: 40px 20px 0px 20px;
+  margin-top: -40px;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+
+  &__titre {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__titre-text {
+    font-family: map-get($font-family, Shrikhand);
+    font-size: map-get($font-size, logo);
+  }
+  &__titre-text::first-letter {
+    text-transform: uppercase;
+  }
+  &__titre-heart {
+    align-self: center;
+    padding-right: 15px;
+  }
+  &__titre-heart::before {
+    font-weight: 400;
+    font-family: "Font Awesome 5 Free";
+    content: "\f004";
+    font-size: 1.6em;
+    color: #7e7e7e;
+  }
+}
+
+.etape {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+
+  &__titre {
+    font-size: map-get($font-size, location);
+    text-transform: uppercase;
+  }
+
+  &__bar {
+    border-top: 3px solid $color-tertiary;
+    width: 40px;
+    margin: 8px 0 8px 0;
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background: white;
+    border-radius: 15px;
+    @include shadow(0.2);
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding-right: 10px;
+    &-titre {
+      font-family: map-get($font-family, Robotobold);
+      font-size: map-get($font-size, location);
+      margin-bottom: 5px;
+      background: white;
+    }
+    &-titre::first-letter {
+      text-transform: uppercase;
+    }
+    &-extra {
+      background: white;
+      font-size: map-get($font-size, nouveau);
+    }
+    &-extra::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  &__prix {
+    background: white;
+    font-family: map-get($font-family, Robotobold);
+    align-self: flex-end;
+    margin-right: 10px;
+  }
+}
+
+.commande {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 50px 0;
+}
+
+@media (min-width: 1024px) {
+  .etape {
+    width: 31%;
+  }
+}

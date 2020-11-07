@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+    <head>
+        @@include("./partial/head.html", { "titre" : "Ohmyfood! Paris", "desc" : "Réservez votre repas dans des restaurants de luxe sur Paris. Le délice des sens !"})
+    </head>
+
+
+<body>
+
+<div class="logo">
+    <div class="logo__left" onclick="window.location.href = 'index.html'"></div>
+   <div class="logo-text">ohmyfood</div>
+    <div class="logo__right"></div>
+</div>
+<div class="space"></div>
+
+<header class="min">
+    <div class="header__img" style="background-image: url(images/4-medium.jpg);"></div>
+</header>
+
+<section class="menu">
+
+<div class="menu__titre">
+    <div class="menu__titre-text"> Le délice des sens</div>
+    <div class="menu__titre-heart"></div>
+</div>
+
+<div class="etape">
+    <div class="etape__titre">entrées</div>
+    <div class="etape__bar"></div>
+
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">tartare de thon</div>
+            <div class="etape__desc-extra">assaisonné au yuzu</div>
+        </div>
+        <div class="etape__prix">25€</div>
+    </div>
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">bouchée de homard croustillant</div>
+            <div class="etape__desc-extra">Et sa farandole de petits légumes</div>
+        </div>
+        <div class="etape__prix">35€</div>
+    </div>
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">velouté de cèpes</div>
+            <div class="etape__desc-extra">Aux truffes</div>
+        </div>
+        <div class="etape__prix">20€</div>
+    </div>
+</div>
+
+<div class="etape">
+    <div class="etape__titre">plats</div>
+    <div class="etape__bar"></div>
+
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">poulet rôti aux herbes de Provence</div>
+            <div class="etape__desc-extra">et sa crème de truffe</div>
+        </div>
+        <div class="etape__prix">40€</div>
+    </div>
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">langouste rôtie</div>
+            <div class="etape__desc-extra">et ses légumes de saison</div>
+        </div>
+        <div class="etape__prix">35€</div>
+    </div>
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">côte de boeuf Angus</div>
+            <div class="etape__desc-extra">et sa purée de panais</div>
+        </div>
+        <div class="etape__prix">44€</div>
+    </div>
+</div>
+
+
+<div class="etape">
+    <div class="etape__titre">desserts</div>
+    <div class="etape__bar"></div>
+
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">farandole de desserts</div>
+            <div class="etape__desc-extra">du chef</div>
+        </div>
+        <div class="etape__prix">18€</div>
+    </div>
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">crème brulée</div>
+            <div class="etape__desc-extra">revisitée</div>
+        </div>
+        <div class="etape__prix">22€</div>
+    </div>
+    <div class="etape__card">
+        <div class="etape__desc">
+            <div class="etape__desc-titre">Tiramisu</div>
+            <div class="etape__desc-extra">à la noisette</div>
+        </div>
+        <div class="etape__prix">23€</div>
+    </div>
+</div>
+
+</section>
+
+<div class="commande">
+<button class="btn btn--primary btn--rounded btn--xl">Commander</button>
+</div>
+
+<footer>
+    @@include("./partial/footer.html")
+</footer>
+</body>
+</html>

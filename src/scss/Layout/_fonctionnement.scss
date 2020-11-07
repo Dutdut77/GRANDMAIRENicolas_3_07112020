@@ -1,0 +1,48 @@
+.fonctionnement{
+@include flexbox($colour : white);
+}
+@media (min-width: 1024px) {
+    .fonctionnement {
+justify-content: space-around;
+         }
+    }
+.fonctionnement-titre {
+    @include titre-section($colour : white);
+}
+
+.choix {
+    @include etiquette ();
+}
+@media (min-width: 1024px) {
+    .choix {
+width: 25%;
+         }
+    }
+.compo {
+    @include etiquette ();
+}
+@media (min-width: 1024px) {
+    .compo {
+width: 25%;
+         }
+    }
+
+.degust {
+    @include etiquette ($colour :#f5edff);
+}
+@media (min-width: 1024px) {
+    .degust {
+width: 25%;
+         }
+    }
+
+.fa-fonct {
+    @include etiquette-icon();
+}
+.fa-fonct2 {
+    @include etiquette-icon($colour :$color-primary);
+}
+
+.ordre {
+    @include etiquette-ordre();
+}

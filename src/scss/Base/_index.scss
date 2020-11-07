@@ -1,0 +1,65 @@
+
+
+* {
+    font-family: map-get($font-family, Roboto);
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+    background : $color-fond;
+  }
+
+
+.logo {
+display: flex;
+position: fixed;
+top : 0;
+justify-content: center;
+align-items: center;
+background: white;
+height: 60px;
+width: 100vw;
+box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
+    }
+  
+.logo-text {
+  text-align: center;
+  font-family: map-get($font-family, Shrikhand);
+  background: white;
+  font-size: map-get($font-size, logo);
+  width: 100%;
+}
+
+
+.logo__left {
+      min-width: 70px;
+      align-self: center;
+      background: white;
+
+  }
+.logo__left::before {
+      padding-left: 20px;
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      content: "\f060";
+      font-size: 1em;
+      background: white;
+      
+
+  }
+
+  .logo__right{
+    min-width: 70px;
+  
+}
+
+.space {
+  height: 60px;
+}    
+
+a {
+  color: white;
+  background: $color-footer;
+  line-height: 1.5em;
+ outline: none;
+ text-decoration: none;
+}

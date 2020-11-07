@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta name="description"
+        content="Réservez votre repas dans des restaurants de luxe sur Paris.">
+    <title>Ohmyfood! Paris</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+
+
+
+
+<body>
+
+    <div class="logo">
+               <div class="logo-text">ohmyfood</div>
+    </div>
+    <div class="space"></div>
+
+    <header>
+        <div class="location"><i class="fa fa-map-marker-alt fa-sm map-marker"></i>Paris, Belleville</div>
+        <nav>
+            <div class="titre-nav">Réserver le menu qui vous convient</div>
+            <div class="desc-nav">Découvrez des restaurants d'exception, sélectionnés par nos soins.</div>
+
+            <button class="btn btn--primary btn--rounded" onclick="window.location.href = '#restaurants'">Explorer nos restaurants</button>
+            
+        </nav>
+    </header>
+
+
+    <section class="fonctionnement">
+        <div class="fonctionnement-titre">Fonctionnement</div>
+        <div class="choix">
+            <div class="ordre">1</div><i class="fas fa-mobile-alt fa-fonct"></i>Choisissez un restaurant
+        </div>
+        <div class="compo">
+            <div class="ordre">2</div><i class="fas fa-list-ul fa-fonct"></i>Composez votre menu
+        </div>
+        <div class="degust">
+            <div class="ordre">3</div><i class="fas fa-store fa-fonct2"></i>Dégustez au restaurant
+        </div>
+    </section>
+
+
+    <section id="restaurants" class="restaurants">
+        <div class="restaurants-titre">Restaurants</div>
+
+        <div class="resto-card" onclick="window.location.href = 'palette.html'">
+            <div class="resto-card__img" style="background-image: url(images/1-small.jpg);">
+            <div class="nouveau">Nouveau</div>
+            </div>
+            <div class="resto-card__desc">
+                <div class="resto-card__desc__titre">
+                    <div class="resto-titre">La palette du goût</div>
+                    <div class="resto-subtitre">Ménilmontant</div>
+                </div>
+                <div class="resto-card__desc__heart"></div>
+            </div>
+        </div>
+
+        <div class="resto-card" onclick="window.location.href = 'note.html'">
+            <div class="resto-card__img" style="background-image: url(images/2-small.jpg);">
+                <div class="nouveau">Nouveau</div>
+            </div>
+            <div class="resto-card__desc">
+                <div class="resto-card__desc__titre">
+                    <div class="resto-titre">La note enchantée</div>
+                    <div class="resto-subtitre">Charonne</div>
+                </div>
+                <div class="resto-card__desc__heart"></div>
+            </div>
+        </div>
+
+        <div class="resto-card" onclick="window.location.href = 'francaise.html'">
+            <div class="resto-card__img" style="background-image: url(images/3-small.jpg);"></div>
+            <div class="resto-card__desc">
+                <div class="resto-card__desc__titre">
+                    <div class="resto-titre">à la française</div>
+                    <div class="resto-subtitre">Cité Rouge</div>
+                </div>
+                <div class="resto-card__desc__heart"></div>
+            </div>
+        </div>
+
+        <div class="resto-card" onclick="window.location.href = 'delice.html'">
+            <div class="resto-card__img" style="background-image: url(images/4-small.jpg);"></div>
+            <div class="resto-card__desc">
+                <div class="resto-card__desc__titre">
+                    <div class="resto-titre">Le délice des sens</div>
+                    <div class="resto-subtitre">Folie-Méricourt</div>
+                </div>
+                <div class="resto-card__desc__heart"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-titre">ohmyfood</div>
+<p class="propo propo__heart">Proposer un restaurant</p>
+<p class="partenaire partenaire__heart">Devenir partenaire</p>
+<p class="divers">Mentions légales</p>
+<p class="divers" ><a href="mailto:contact@ohmyfood.com">Contact</a></p>
+    </footer>
+
+</body>
+
+</html>

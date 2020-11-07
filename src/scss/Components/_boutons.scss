@@ -1,0 +1,57 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  padding: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  @include shadow();
+  font-size: map-get($font-size, location);
+  z-index: 1;
+
+  &--primary {
+    color: white;
+    background: linear-gradient($color-secondary, $color-primary);
+  }
+  &--rounded {
+    border-radius: 50px;
+  }
+  &--xl {
+    width: 50%;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &:active {
+    outline:none;
+  }
+  &:focus {
+    outline:none;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 500ms;
+    background: linear-gradient($color-secondary-clair, $color-primary-clair);
+    @include shadow($alpha: 0.8);
+    border-radius: 50px;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn--xl {
+    width: 31%;
+  }
+}

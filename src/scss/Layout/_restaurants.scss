@@ -1,0 +1,101 @@
+.restaurants{
+@include flexbox();
+}
+
+
+@media (min-width: 768px) {
+    .restaurants {
+justify-content: space-around;
+         }
+    }
+.restaurants-titre {
+    @include titre-section();
+}
+
+
+.resto-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+    background: white;
+    @include shadow();
+    border-radius: 15px;
+    margin: 15px;
+    cursor: pointer;
+
+
+
+    &__img{
+        position: relative;
+        width: 100%;
+        height: 173px;
+        border-radius: 15px 15px 0 0;
+        background-position: center center;
+        background-size: cover;
+    }
+    &__desc {
+
+        display : flex;
+        flex-wrap: nowrap;        
+        justify-content: space-between;
+        height: 75px;
+        width: 100%;
+        background: white;
+        border-radius: 0 0 15px 15px;
+
+                &__titre {
+                   padding-left: 15px; 
+                   align-self: center;
+                  background: white;
+                }
+                &__heart {
+                    align-self: center;
+                    padding-right: 25px; 
+                    background: white;
+                }
+                &__heart::before {
+                    font-weight: 400;
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f004";
+                    font-size: 1.6em;
+                    background: white;
+                    color: #7e7e7e;
+            
+                }
+}
+
+
+  }     
+
+
+    @media (min-width: 768px) {
+    .resto-card {
+        width: 46% ;
+      
+                }
+    }
+  
+.resto-titre {
+    font-family: map-get($font-family, Robotobold); 
+    background: white;
+}
+.resto-titre::first-letter{
+    text-transform: uppercase;
+}
+.resto-subtitre {
+    margin-top: 3px;
+     background: white;
+}
+
+.nouveau {
+    position: absolute;
+    top : 15px;
+    right : 15px;
+    font-family: map-get($font-family, Robotobold);
+    font-size: map-get($font-size, nouveau);
+    background: $color-tertiary;
+    color: darken($color-tertiary, 35);
+    padding: 6px;
+    border-radius: 3px;
+}
