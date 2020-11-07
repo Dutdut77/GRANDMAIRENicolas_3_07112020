@@ -1,2 +1,0 @@
-# GRANDMAIRENicolas_3_07112020
-ohmyfood
