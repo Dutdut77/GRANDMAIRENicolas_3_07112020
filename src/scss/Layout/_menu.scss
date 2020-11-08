@@ -28,6 +28,7 @@
 
   }
   &__titre-heart::before {
+
     font-weight: 400;
     font-family: "Font Awesome 5 Free";
     content: "\f004";
@@ -36,10 +37,10 @@
     
   }
 
-  &__titre-heart:hover {
+  &__titre-heart:hover {    
     font-weight: 900;
-    animation: anim-heart 1500ms;
-    animation-fill-mode: both;
+   animation: anim-heart 1500ms;
+   animation-fill-mode: both;
    
   }
 }

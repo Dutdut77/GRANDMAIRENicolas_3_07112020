@@ -38,7 +38,9 @@
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     -webkit-transform: translateY(50%);
-    transform: translateY(50%); }
+    transform: translateY(50%);
+    font-weight: 900;
+    color: red; }
   100% {
     opacity: 1;
     font-weight: 900;
@@ -50,7 +52,9 @@
     -moz-transform-origin: bottom;
     transform-origin: bottom;
     -moz-transform: translateY(50%);
-    transform: translateY(50%); }
+    transform: translateY(50%);
+    font-weight: 900;
+    color: red; }
   100% {
     opacity: 1;
     font-weight: 900;
@@ -62,7 +66,9 @@
     -o-transform-origin: bottom;
     transform-origin: bottom;
     -o-transform: translateY(50%);
-    transform: translateY(50%); }
+    transform: translateY(50%);
+    font-weight: 900;
+    color: red; }
   100% {
     opacity: 1;
     font-weight: 900;
@@ -78,7 +84,9 @@
     -webkit-transform: translateY(50%);
     -moz-transform: translateY(50%);
     -o-transform: translateY(50%);
-    transform: translateY(50%); }
+    transform: translateY(50%);
+    font-weight: 900;
+    color: red; }
   100% {
     opacity: 1;
     font-weight: 900;
