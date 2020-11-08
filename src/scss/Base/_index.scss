@@ -17,12 +17,20 @@
   height: 100vh;
   z-index: 99;
   &__titre {
-    margin-bottom: 10px;
+    display : flex;
+    margin-bottom: 15px;
     background-color: #f5edff;
     &--text {
+     padding: 6px;     
       background-color: #f5edff;
       font-family: map-get($font-family, Shrikhand);
       font-size: 2rem;
+      animation : anim-titre 1000ms infinite;
+      @for $i from 1 through 7 {
+        &:nth-child(#{$i+1}) {
+          animation-delay: #{$i*.1}s;
+        }
+      }
     }
   }
 
