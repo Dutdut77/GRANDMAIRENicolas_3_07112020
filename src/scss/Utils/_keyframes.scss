@@ -8,3 +8,39 @@
     opacity: 1;
   }
 }
+
+@keyframes anim-bar {
+
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+        
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+    }
+    85%,100%{
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+
+    }
+
+}
+
+@keyframes anim-body{
+    0% {
+        transform: translateX(-9999px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
