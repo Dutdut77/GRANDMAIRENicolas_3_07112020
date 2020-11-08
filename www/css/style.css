@@ -32,6 +32,58 @@
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes anim-heart {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%); }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    color: red; } }
+
+@-moz-keyframes anim-heart {
+  0% {
+    opacity: 0;
+    -moz-transform-origin: bottom;
+    transform-origin: bottom;
+    -moz-transform: translateY(50%);
+    transform: translateY(50%); }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    color: red; } }
+
+@-o-keyframes anim-heart {
+  0% {
+    opacity: 0;
+    -o-transform-origin: bottom;
+    transform-origin: bottom;
+    -o-transform: translateY(50%);
+    transform: translateY(50%); }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    color: red; } }
+
+@keyframes anim-heart {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -o-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%); }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    color: red; } }
+
 @font-face {
   font-family: "Shrikhand";
   src: url("../fonts/shrikhand-regular.ttf");
@@ -637,6 +689,16 @@ footer {
     content: "\f004";
     font-size: 1.6em;
     color: #7e7e7e; }
+  .menu__titre-heart:hover {
+    font-weight: 900;
+    -webkit-animation: anim-heart 1500ms;
+    -moz-animation: anim-heart 1500ms;
+    -o-animation: anim-heart 1500ms;
+    animation: anim-heart 1500ms;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both; }
 
 .etape {
   display: -webkit-box;
