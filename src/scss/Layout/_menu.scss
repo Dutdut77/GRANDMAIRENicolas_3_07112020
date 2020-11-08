@@ -62,7 +62,14 @@
     background: white;
     border-radius: 15px;
     @include shadow(0.2);
-  }
+    animation: anim-card 1500ms;
+    animation-fill-mode: both;
+    @for $i from 3 through 6 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{$i*.2}s;
+      }
+    }
+    }
 
   &__desc {
     display: flex;
