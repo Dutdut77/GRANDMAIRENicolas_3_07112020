@@ -330,6 +330,12 @@
     -o-animation: anim-bar 2000ms 150ms both;
     animation: anim-bar 2000ms 150ms both; }
 
+body {
+  -webkit-animation: anim-body 100ms 150ms both;
+  -moz-animation: anim-body 100ms 150ms both;
+  -o-animation: anim-body 100ms 150ms both;
+  animation: anim-body 100ms 150ms both; }
+
 .logo {
   display: -webkit-box;
   display: -webkit-flex;

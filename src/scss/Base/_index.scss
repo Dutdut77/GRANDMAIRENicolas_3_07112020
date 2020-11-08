@@ -48,6 +48,10 @@
   }
 }
 
+body{
+  animation: anim-body 100ms 150ms both;
+}
+
 .logo {
   display: flex;
   position: fixed;
