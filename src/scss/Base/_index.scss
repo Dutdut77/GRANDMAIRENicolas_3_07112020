@@ -9,13 +9,19 @@
 .intro {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: fixed;
+  top: 0;
   justify-content: center;
   align-items: center;
   background-color: #f5edff;
   width: 100vw;
-  height: 100vh;
+  height: 0;
   z-index: 99;
+  animation : loader 3000ms both;
+  animation-iteration-count: 1;
+  overflow: hidden;
+
+
   &__titre {
     display : flex;
     margin-bottom: 15px;
@@ -50,6 +56,14 @@
 
 body{
   animation: anim-body 100ms 150ms both;
+}
+
+main{
+overflow: hidden;
+height: auto;
+animation : loader-main 3s;
+animation-iteration-count: 1;
+
 }
 
 .logo {
