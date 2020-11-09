@@ -32,6 +32,124 @@
   100% {
     opacity: 1; } }
 
+@-webkit-keyframes anim-valid {
+  0% {
+    width: 0; }
+  100% {
+    width: 80px; } }
+
+@-moz-keyframes anim-valid {
+  0% {
+    width: 0; }
+  100% {
+    width: 80px; } }
+
+@-o-keyframes anim-valid {
+  0% {
+    width: 0; }
+  100% {
+    width: 80px; } }
+
+@keyframes anim-valid {
+  0% {
+    width: 0; }
+  100% {
+    width: 80px; } }
+
+@-webkit-keyframes anim-valid-out {
+  0% {
+    width: 80px; }
+  100% {
+    width: 0; } }
+
+@-moz-keyframes anim-valid-out {
+  0% {
+    width: 80px; }
+  100% {
+    width: 0; } }
+
+@-o-keyframes anim-valid-out {
+  0% {
+    width: 80px; }
+  100% {
+    width: 0; } }
+
+@keyframes anim-valid-out {
+  0% {
+    width: 80px; }
+  100% {
+    width: 0; } }
+
+@-webkit-keyframes anim-check {
+  0% { }
+  10% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1; } }
+
+@-moz-keyframes anim-check {
+  0% { }
+  10% {
+    opacity: 1; }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1; } }
+
+@-o-keyframes anim-check {
+  0% { }
+  10% {
+    opacity: 1; }
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1; } }
+
+@keyframes anim-check {
+  0% { }
+  10% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1; } }
+
+@-webkit-keyframes anim-check-out {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes anim-check-out {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes anim-check-out {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes anim-check-out {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
 @font-face {
   font-family: "Shrikhand";
   src: url("../fonts/shrikhand-regular.ttf");
@@ -81,7 +199,8 @@
   width: 100vw;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
-  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3); }
+  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
+  z-index: 999999; }
 
 .logo-text {
   text-align: center;
@@ -604,8 +723,7 @@ footer {
   margin-top: -40px;
   -webkit-border-radius: 40px 40px 0 0;
   -moz-border-radius: 40px 40px 0 0;
-  border-radius: 40px 40px 0 0;
-  position: relative; }
+  border-radius: 40px 40px 0 0; }
   .menu__titre {
     display: -webkit-box;
     display: -webkit-flex;
@@ -661,6 +779,8 @@ footer {
     width: 40px;
     margin: 8px 0 8px 0; }
   .etape__card {
+    height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -676,7 +796,6 @@ footer {
     justify-content: space-between;
     margin-top: 8px;
     margin-bottom: 5px;
-    padding: 10px;
     background: white;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -684,6 +803,7 @@ footer {
     -webkit-box-shadow: 0px 5px 10px 0px rgba(119, 119, 119, 0.2);
     -moz-box-shadow: 0px 5px 10px 0px rgba(119, 119, 119, 0.2);
     box-shadow: 0px 5px 10px 0px rgba(119, 119, 119, 0.2);
+    cursor: pointer;
     -webkit-animation: anim-card 1500ms;
     -moz-animation: anim-card 1500ms;
     -o-animation: anim-card 1500ms;
@@ -712,6 +832,26 @@ footer {
       -moz-animation-delay: 1.2s;
       -o-animation-delay: 1.2s;
       animation-delay: 1.2s; }
+    .etape__card .etape__valid {
+      -webkit-animation: anim-valid-out 1000ms both;
+      -moz-animation: anim-valid-out 1000ms both;
+      -o-animation: anim-valid-out 1000ms both;
+      animation: anim-valid-out 1000ms both; }
+    .etape__card .etape__valid--check {
+      -webkit-animation: anim-check-out 1000ms both;
+      -moz-animation: anim-check-out 1000ms both;
+      -o-animation: anim-check-out 1000ms both;
+      animation: anim-check-out 1000ms both; }
+  .etape__card:hover .etape__valid {
+    -webkit-animation: anim-valid 1000ms both;
+    -moz-animation: anim-valid 1000ms both;
+    -o-animation: anim-valid 1000ms both;
+    animation: anim-valid 1000ms both; }
+  .etape__card:hover .etape__valid--check {
+    -webkit-animation: anim-check 1000ms both;
+    -moz-animation: anim-check 1000ms both;
+    -o-animation: anim-check 1000ms both;
+    animation: anim-check 1000ms both; }
   .etape__desc {
     display: -webkit-box;
     display: -webkit-flex;
@@ -726,8 +866,24 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     background: white;
-    padding-right: 10px; }
+    padding-right: 10px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    border-radius: 15px 0 0 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
     .etape__desc-titre {
+      padding: 10px 0 0 15px;
+      -webkit-border-radius: 15px 0 0 15px;
+      -moz-border-radius: 15px 0 0 15px;
+      border-radius: 15px 0 0 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
       font-family: Robotobold;
       font-size: 1rem;
       margin-bottom: 5px;
@@ -735,17 +891,78 @@ footer {
     .etape__desc-titre::first-letter {
       text-transform: uppercase; }
     .etape__desc-extra {
+      padding: 0 0 10px 15px;
+      -webkit-border-radius: 15px 0 0 15px;
+      -moz-border-radius: 15px 0 0 15px;
+      border-radius: 15px 0 0 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
       background: white;
       font-size: 0.9rem; }
     .etape__desc-extra::first-letter {
       text-transform: uppercase; }
   .etape__prix {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding-bottom: 10px;
     background: white;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
     font-family: Robotobold;
-    -webkit-align-self: flex-end;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    margin-right: 10px; }
+    margin-right: 10px;
+    min-width: 50px; }
+  .etape__valid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    background: #99E2D0;
+    width: 0; }
+    .etape__valid--check {
+      width: 20px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: white;
+      text-align: center;
+      opacity: 0; }
+    .etape__valid--check::before {
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      content: "\f00c";
+      font-size: 0.8em;
+      color: #99E2D0; }
 
 .commande {
   display: -webkit-box;

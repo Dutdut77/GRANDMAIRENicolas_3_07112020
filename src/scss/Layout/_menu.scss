@@ -6,7 +6,6 @@
   padding: 40px 20px 0px 20px;
   margin-top: -40px;
   border-radius: 40px 40px 0 0;
-  position: relative;
 
   &__titre {
     display: flex;
@@ -53,30 +52,58 @@
   }
 
   &__card {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 8px;
     margin-bottom: 5px;
-    padding: 10px;
     background: white;
     border-radius: 15px;
     @include shadow(0.2);
+    cursor: pointer;
     animation: anim-card 1500ms;
     animation-fill-mode: both;
     @for $i from 3 through 6 {
       &:nth-child(#{$i}) {
-        animation-delay: #{$i*.2}s;
+        animation-delay: #{$i * 0.2}s;
       }
     }
+    .etape__valid {
+      animation: anim-valid-out 1000ms both;
     }
+    .etape__valid--check {
+      animation: anim-check-out 1000ms both;
+    }
+  }
+
+  &__card:hover {
+    .etape__valid {
+      animation: anim-valid 1000ms both;
+    }
+    .etape__valid--check {
+      animation: anim-check 1000ms both;
+    }
+  }
 
   &__desc {
     display: flex;
     flex-direction: column;
     background: white;
     padding-right: 10px;
+    border-radius: 15px 0 0 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     &-titre {
+      padding: 10px 0 0 15px;
+      border-radius: 15px 0 0 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       font-family: map-get($font-family, Robotobold);
       font-size: map-get($font-size, location);
       margin-bottom: 5px;
@@ -86,6 +113,11 @@
       text-transform: uppercase;
     }
     &-extra {
+      padding: 0 0 10px 15px;
+      border-radius: 15px 0 0 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       background: white;
       font-size: map-get($font-size, nouveau);
     }
@@ -93,11 +125,44 @@
       text-transform: uppercase;
     }
   }
+
   &__prix {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
     background: white;
+    border-radius: 0 15px 15px 0;
     font-family: map-get($font-family, Robotobold);
-    align-self: flex-end;
     margin-right: 10px;
+    min-width: 50px;
+ 
+  }
+  &__valid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    background: $color-tertiary;
+    width: 0;
+    
+
+    &--check {
+      width: 20px;
+      border-radius: 50%;
+      background: white;
+      text-align: center;
+      opacity: 0;
+    }
+
+    &--check::before {
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      content: "\f00c";
+      font-size: 0.8em;
+      color: $color-tertiary;
+    }
   }
 }
 
