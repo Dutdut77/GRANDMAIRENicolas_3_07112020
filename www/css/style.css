@@ -199,7 +199,8 @@
   width: 100vw;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
-  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3); }
+  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
+  z-index: 999999; }
 
 .logo-text {
   text-align: center;
