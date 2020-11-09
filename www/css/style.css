@@ -605,7 +605,8 @@ footer {
   -webkit-border-radius: 40px 40px 0 0;
   -moz-border-radius: 40px 40px 0 0;
   border-radius: 40px 40px 0 0;
-  position: relative; }
+  position: relative;
+  z-index: 100; }
   .menu__titre {
     display: -webkit-box;
     display: -webkit-flex;
@@ -639,6 +640,7 @@ footer {
     color: #7e7e7e; }
 
 .etape {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -661,6 +663,8 @@ footer {
     width: 40px;
     margin: 8px 0 8px 0; }
   .etape__card {
+    position: relative;
+    height: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -676,7 +680,6 @@ footer {
     justify-content: space-between;
     margin-top: 8px;
     margin-bottom: 5px;
-    padding: 10px;
     background: white;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -684,6 +687,7 @@ footer {
     -webkit-box-shadow: 0px 5px 10px 0px rgba(119, 119, 119, 0.2);
     -moz-box-shadow: 0px 5px 10px 0px rgba(119, 119, 119, 0.2);
     box-shadow: 0px 5px 10px 0px rgba(119, 119, 119, 0.2);
+    cursor: pointer;
     -webkit-animation: anim-card 1500ms;
     -moz-animation: anim-card 1500ms;
     -o-animation: anim-card 1500ms;
@@ -712,6 +716,20 @@ footer {
       -moz-animation-delay: 1.2s;
       -o-animation-delay: 1.2s;
       animation-delay: 1.2s; }
+  .etape__card:hover .etape__desc {
+    width: 50%; }
+  .etape__card:hover .etape__end {
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px);
+    -webkit-transition: -webkit-transform 1000ms;
+    transition: -webkit-transform 1000ms;
+    -o-transition: -o-transform 1000ms;
+    -moz-transition: transform 1000ms, -moz-transform 1000ms;
+    transition: transform 1000ms;
+    transition: transform 1000ms, -webkit-transform 1000ms, -moz-transform 1000ms, -o-transform 1000ms; }
   .etape__desc {
     display: -webkit-box;
     display: -webkit-flex;
@@ -726,8 +744,19 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     background: white;
-    padding-right: 10px; }
+    padding-right: 10px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    border-radius: 15px 0 0 15px; }
     .etape__desc-titre {
+      padding: 10px 0 0 15px;
+      -webkit-border-radius: 15px 0 0 15px;
+      -moz-border-radius: 15px 0 0 15px;
+      border-radius: 15px 0 0 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
       font-family: Robotobold;
       font-size: 1rem;
       margin-bottom: 5px;
@@ -735,17 +764,64 @@ footer {
     .etape__desc-titre::first-letter {
       text-transform: uppercase; }
     .etape__desc-extra {
+      padding: 0 0 10px 15px;
+      -webkit-border-radius: 15px 0 0 15px;
+      -moz-border-radius: 15px 0 0 15px;
+      border-radius: 15px 0 0 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
       background: white;
       font-size: 0.9rem; }
     .etape__desc-extra::first-letter {
       text-transform: uppercase; }
+  .etape__end {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background: transparent;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    width: 100px;
+    margin-right: -50px;
+    position: relative;
+    z-index: 50; }
   .etape__prix {
+    padding-bottom: 10px;
     background: white;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
     font-family: Robotobold;
-    -webkit-align-self: flex-end;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    margin-right: 10px; }
+    margin-right: 10px;
+    width: 30px; }
+  .etape__valid {
+    position: relative;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    background: #99E2D0;
+    width: 50px;
+    z-index: -1; }
 
 .commande {
   display: -webkit-box;
