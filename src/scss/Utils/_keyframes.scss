@@ -12,16 +12,13 @@
 
 @keyframes anim-heart {
     0% {
-        opacity: 0;
-       transform-origin: bottom; 
-      transform: translateY(50%);
-      font-weight: 900;
-      color : red;
+       transform: scale(0); 
+       opacity : 0;
+      
     }
   
     100% {
-        opacity:1;
-        font-weight: 900;
-        color : red;
+      opacity: 1;
+      transform: scale(2);
     }
   }
