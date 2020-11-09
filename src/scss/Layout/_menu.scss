@@ -6,8 +6,6 @@
   padding: 40px 20px 0px 20px;
   margin-top: -40px;
   border-radius: 40px 40px 0 0;
-  position: relative;
-  z-index: 100;
 
   &__titre {
     display: flex;
@@ -37,7 +35,6 @@
 }
 
 .etape {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
@@ -55,8 +52,8 @@
   }
 
   &__card {
-    position :relative;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -73,15 +70,20 @@
         animation-delay: #{$i * 0.2}s;
       }
     }
+    .etape__valid {
+      animation: anim-valid-out 1000ms both;
+    }
+    .etape__valid--check {
+      animation: anim-check-out 1000ms both;
+    }
   }
 
   &__card:hover {
-    .etape__desc {
-      width: 50%;
+    .etape__valid {
+      animation: anim-valid 1000ms both;
     }
-    .etape__end {
-      transform: translateX(-50px);
-      transition: transform 1000ms;
+    .etape__valid--check {
+      animation: anim-check 1000ms both;
     }
   }
 
@@ -91,6 +93,11 @@
     background: white;
     padding-right: 10px;
     border-radius: 15px 0 0 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     &-titre {
       padding: 10px 0 0 15px;
       border-radius: 15px 0 0 15px;
@@ -119,34 +126,43 @@
     }
   }
 
-  &__end {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    background: transparent;
-    border-radius: 0 15px 15px 0;
-    height: 100%;
-    width: 100px;
-    margin-right: -50px;
-    position: relative;
-    z-index: 50;
-  }
   &__prix {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     padding-bottom: 10px;
     background: white;
     border-radius: 0 15px 15px 0;
     font-family: map-get($font-family, Robotobold);
     margin-right: 10px;
-    width: 30px;
+    min-width: 50px;
+ 
   }
   &__valid {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 0 15px 15px 0;
     height: 100%;
     background: $color-tertiary;
-    width: 50px;
-    z-index: -1;
+    width: 0;
+    
+
+    &--check {
+      width: 20px;
+      border-radius: 50%;
+      background: white;
+      text-align: center;
+      opacity: 0;
+    }
+
+    &--check::before {
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      content: "\f00c";
+      font-size: 0.8em;
+      color: $color-tertiary;
+    }
   }
 }
 
