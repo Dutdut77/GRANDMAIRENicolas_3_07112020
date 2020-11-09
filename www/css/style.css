@@ -149,6 +149,7 @@
     opacity: 0; }
   100% {
     opacity: 0; } }
+
 @-webkit-keyframes loader {
   0% {
     height: 100vh; }
@@ -319,78 +320,6 @@
     -o-transform-origin: left;
     transform-origin: left; } }
 
-@-webkit-keyframes anim-body {
-  0% {
-    -webkit-transform: translateX(-9999px);
-    transform: translateX(-9999px); }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-
-@-moz-keyframes anim-body {
-  0% {
-    -moz-transform: translateX(-9999px);
-    transform: translateX(-9999px); }
-  100% {
-    -moz-transform: translateX(0);
-    transform: translateX(0); } }
-
-@-o-keyframes anim-body {
-  0% {
-    -o-transform: translateX(-9999px);
-    transform: translateX(-9999px); }
-  100% {
-    -o-transform: translateX(0);
-    transform: translateX(0); } }
-
-@keyframes anim-body {
-  0% {
-    -webkit-transform: translateX(-9999px);
-    -moz-transform: translateX(-9999px);
-    -o-transform: translateX(-9999px);
-    transform: translateX(-9999px); }
-  100% {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0); } }
-
-@-webkit-keyframes anim-titre {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  50% {
-    -webkit-transform: translateY(15px);
-    transform: translateY(15px); } }
-
-@-moz-keyframes anim-titre {
-  0%, 100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0); }
-  50% {
-    -moz-transform: translateY(15px);
-    transform: translateY(15px); } }
-
-@-o-keyframes anim-titre {
-  0%, 100% {
-    -o-transform: translateY(0);
-    transform: translateY(0); }
-  50% {
-    -o-transform: translateY(15px);
-    transform: translateY(15px); } }
-
-@keyframes anim-titre {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0); }
-  50% {
-    -webkit-transform: translateY(15px);
-    -moz-transform: translateY(15px);
-    -o-transform: translateY(15px);
-    transform: translateY(15px); } }
-
 @font-face {
   font-family: "Shrikhand";
   src: url("../fonts/shrikhand-regular.ttf");
@@ -445,7 +374,7 @@
   background-color: #f5edff;
   width: 100vw;
   height: 0;
-  z-index: 99;
+  z-index: 999999;
   -webkit-animation: loader 3000ms both;
   -moz-animation: loader 3000ms both;
   -o-animation: loader 3000ms both;
@@ -563,7 +492,7 @@ main {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
   -moz-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
-  z-index: 999999; }
+  z-index: 9999; }
 
 .logo-text {
   text-align: center;
