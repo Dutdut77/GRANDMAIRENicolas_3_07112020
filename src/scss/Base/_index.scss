@@ -1,13 +1,70 @@
-
-
 * {
-    font-family: map-get($font-family, Roboto);
-    line-height: 1.2em;
-    margin: 0;
-    padding: 0;
-    background : $color-fond;
+  font-family: map-get($font-family, Roboto);
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+  background: $color-fond;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5edff;
+  width: 100vw;
+  height: 0;
+  z-index: 99;
+  animation : loader 3000ms both;
+  animation-iteration-count: 1;
+  overflow: hidden;
+
+
+  &__titre {
+    display : flex;
+    margin-bottom: 15px;
+    background-color: #f5edff;
+    &--text {
+     padding: 6px;     
+      background-color: #f5edff;
+      font-family: map-get($font-family, Shrikhand);
+      font-size: 2rem;
+      animation : anim-titre 1000ms infinite;
+      @for $i from 1 through 7 {
+        &:nth-child(#{$i+1}) {
+          animation-delay: #{$i*.1}s;
+        }
+      }
+    }
   }
 
+}
+.loader {
+  border: 2px solid black;
+  padding: 1px;
+  width: 70%;
+
+  &__bar {
+    background: $color-primary;
+    padding: 3px;
+    opacity: 0;
+    animation: anim-bar 2000ms 150ms both;
+  }
+}
+
+body{
+  animation: anim-body 100ms 150ms both;
+}
+
+main{
+overflow: hidden;
+height: auto;
+animation : loader-main 3s;
+animation-iteration-count: 1;
+
+}
 
 .logo {
 display: flex;
@@ -30,37 +87,32 @@ z-index: 999999;
   width: 100%;
 }
 
-
 .logo__left {
-      min-width: 70px;
-      align-self: center;
-      background: white;
-
-  }
+  min-width: 70px;
+  align-self: center;
+  background: white;
+}
 .logo__left::before {
-      padding-left: 20px;
-      font-weight: 900;
-      font-family: "Font Awesome 5 Free";
-      content: "\f060";
-      font-size: 1em;
-      background: white;
-      
+  padding-left: 20px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f060";
+  font-size: 1em;
+  background: white;
+}
 
-  }
-
-  .logo__right{
-    min-width: 70px;
-  
+.logo__right {
+  min-width: 70px;
 }
 
 .space {
   height: 60px;
-}    
+}
 
 a {
   color: white;
   background: $color-footer;
   line-height: 1.5em;
- outline: none;
- text-decoration: none;
+  outline: none;
+  text-decoration: none;
 }
