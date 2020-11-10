@@ -116,6 +116,14 @@
 
 }
 
+@keyframes anim-titre {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
 
 @keyframes anim-heart {
     0% {
