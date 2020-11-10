@@ -42,13 +42,12 @@
       font-family: "Font Awesome 5 Free";
       content: "\f004";
       font-size: 1.6em;
-      color: $color-primary;
+      background: linear-gradient($color-primary, $color-secondary);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
       cursor: pointer;
-  animation : anim-heart 1500ms;
+      animation : anim-heart 1500ms both;
   }
-
-
-
 
 
 
@@ -131,3 +130,4 @@
     width: 31%;
   }
 }
+
