@@ -1224,25 +1224,25 @@ footer {
       -o-animation-delay: 1.2s;
       animation-delay: 1.2s; }
     .etape__card .etape__valid {
-      -webkit-animation: anim-valid-out 1000ms both;
-      -moz-animation: anim-valid-out 1000ms both;
-      -o-animation: anim-valid-out 1000ms both;
-      animation: anim-valid-out 1000ms both; }
+      -webkit-animation: anim-valid-out 500ms both;
+      -moz-animation: anim-valid-out 500ms both;
+      -o-animation: anim-valid-out 500ms both;
+      animation: anim-valid-out 500ms both; }
     .etape__card .etape__valid--check {
-      -webkit-animation: anim-check-out 1000ms both;
-      -moz-animation: anim-check-out 1000ms both;
-      -o-animation: anim-check-out 1000ms both;
-      animation: anim-check-out 1000ms both; }
+      -webkit-animation: anim-check-out 500ms both;
+      -moz-animation: anim-check-out 500ms both;
+      -o-animation: anim-check-out 500ms both;
+      animation: anim-check-out 500ms both; }
   .etape__card:hover .etape__valid {
-    -webkit-animation: anim-valid 1000ms both;
-    -moz-animation: anim-valid 1000ms both;
-    -o-animation: anim-valid 1000ms both;
-    animation: anim-valid 1000ms both; }
+    -webkit-animation: anim-valid 500ms both;
+    -moz-animation: anim-valid 500ms both;
+    -o-animation: anim-valid 500ms both;
+    animation: anim-valid 500ms both; }
   .etape__card:hover .etape__valid--check {
-    -webkit-animation: anim-check 1000ms both;
-    -moz-animation: anim-check 1000ms both;
-    -o-animation: anim-check 1000ms both;
-    animation: anim-check 1000ms both; }
+    -webkit-animation: anim-check 500ms both;
+    -moz-animation: anim-check 500ms both;
+    -o-animation: anim-check 500ms both;
+    animation: anim-check 500ms both; }
   .etape__desc {
     display: -webkit-box;
     display: -webkit-flex;

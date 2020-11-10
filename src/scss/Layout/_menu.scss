@@ -90,19 +90,19 @@
       }
     }
     .etape__valid {
-      animation: anim-valid-out 1000ms both;
+      animation: anim-valid-out 500ms both;
     }
     .etape__valid--check {
-      animation: anim-check-out 1000ms both;
+      animation: anim-check-out 500ms both;
     }
   }
 
   &__card:hover {
     .etape__valid {
-      animation: anim-valid 1000ms both;
+      animation: anim-valid 500ms both;
     }
     .etape__valid--check {
-      animation: anim-check 1000ms both;
+      animation: anim-check 500ms both;
     }
   }
 
