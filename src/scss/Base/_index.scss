@@ -17,77 +17,77 @@
   width: 100vw;
   height: 0;
   z-index: 999999;
-  animation : loader 3000ms both;
+  animation: loader 3000ms both;
   animation-iteration-count: 1;
   overflow: hidden;
-
-
-
-
-  &__titre {
-    display : flex;
-    margin-bottom: 15px;
-    background-color: #f5edff;
-    &--text {
-     padding: 6px;     
-      background-color: #f5edff;
-      font-family: map-get($font-family, Shrikhand);
-      font-size: 2rem;
-      animation : anim-titre 1000ms infinite;
-      @for $i from 1 through 7 {
-        &:nth-child(#{$i+1}) {
-          animation-delay: #{$i*.1}s;
-        }
-      }
-    }
-  }
-
-}
-.loader {
-  border: 2px solid black;
-  padding: 1px;
-  width: 70%;
-margin-bottom: 180px;
-  &__bar {
-    background: $color-primary;
-    padding: 3px;
-    opacity: 0;
-    
-    animation: anim-bar 2000ms 150ms both;
-  }
-
-  @media (min-width: 1024px) {
-    .loader {
-      margin-bottom: 0;
-    }
-  }
 }
 
-body{
+.spinner-box {
+  width: 105px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.spinner-text {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: #f5edff;
+  font-family: map-get($font-family, Shrikhand);
+  font-size: 2rem;
+ padding : 0 10px 0 10px;
+}
+.circle-border {
+  width: 95px;
+  height: 95px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: $color-primary;
+  background: linear-gradient(0deg, $color-secondary 33%, $color-primary 100%);
+  animation: spin 1.2s linear 0s infinite;
+}
+
+.circle-core {
+  width: 100%;
+  height: 100%;
+  background-color: #f5edff;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .loader {
+    width: 30%;
+  }
+}
+body {
   animation: anim-body 100ms 150ms both;
 }
 
-main{
-overflow: hidden;
-height: auto;
-animation : loader-main 3s;
-animation-iteration-count: 1;
-
+main {
+  overflow: hidden;
+  height: auto;
+  animation: loader-main 3s;
+  animation-iteration-count: 1;
 }
 
 .logo {
-display: flex;
-position: fixed;
-top : 0;
-justify-content: center;
-align-items: center;
-background: white;
-height: 60px;
-width: 100vw;
-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
-z-index: 9999;
-    }
-  
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 60px;
+  width: 100vw;
+  box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.3);
+  z-index: 9999;
+}
+
 .logo-text {
   text-align: center;
   font-family: map-get($font-family, Shrikhand);
