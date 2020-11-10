@@ -22,6 +22,8 @@
   overflow: hidden;
 
 
+
+
   &__titre {
     display : flex;
     margin-bottom: 15px;
@@ -45,12 +47,19 @@
   border: 2px solid black;
   padding: 1px;
   width: 70%;
-
+margin-bottom: 180px;
   &__bar {
     background: $color-primary;
     padding: 3px;
     opacity: 0;
+    
     animation: anim-bar 2000ms 150ms both;
+  }
+
+  @media (min-width: 1024px) {
+    .loader {
+      margin-bottom: 0;
+    }
   }
 }
 
