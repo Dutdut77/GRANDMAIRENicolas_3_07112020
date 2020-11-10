@@ -97,7 +97,7 @@
     }
   }
 
-  &__card:hover {
+  &__card:hover, &__card:focus{
     .etape__valid {
       animation: anim-valid 500ms both;
     }

@@ -1237,12 +1237,12 @@ footer {
       -moz-animation: anim-check-out 500ms both;
       -o-animation: anim-check-out 500ms both;
       animation: anim-check-out 500ms both; }
-  .etape__card:hover .etape__valid {
+  .etape__card:hover .etape__valid, .etape__card:focus .etape__valid {
     -webkit-animation: anim-valid 500ms both;
     -moz-animation: anim-valid 500ms both;
     -o-animation: anim-valid 500ms both;
     animation: anim-valid 500ms both; }
-  .etape__card:hover .etape__valid--check {
+  .etape__card:hover .etape__valid--check, .etape__card:focus .etape__valid--check {
     -webkit-animation: anim-check 500ms both;
     -moz-animation: anim-check 500ms both;
     -o-animation: anim-check 500ms both;
