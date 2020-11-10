@@ -26,12 +26,30 @@
     padding-right: 15px;
   }
   &__titre-heart::before {
+ 
     font-weight: 400;
     font-family: "Font Awesome 5 Free";
     content: "\f004";
     font-size: 1.6em;
     color: #7e7e7e;
+    cursor: pointer;
+   
   }
+
+  &__titre-heart:hover::before {
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      content: "\f004";
+      font-size: 1.6em;
+      background: linear-gradient($color-primary, $color-secondary);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
+      animation : anim-heart 1500ms both;
+  }
+
+
+
 }
 
 .etape {
@@ -177,3 +195,4 @@
     width: 31%;
   }
 }
+
