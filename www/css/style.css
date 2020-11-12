@@ -18,7 +18,6 @@
     width: 0; } }
 
 @keyframes anim-check {
-  0% { }
   10% {
     opacity: 1; }
   100% {
