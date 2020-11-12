@@ -27,7 +27,7 @@
     padding-right: 15px;
   }
   &__titre-heart::before {
- 
+
     font-weight: 400;
     font-family: "Font Awesome 5 Free";
     content: "\f004";
@@ -38,6 +38,7 @@
   }
 
   &__titre-heart:hover::before {
+    
       font-weight: 900;
       font-family: "Font Awesome 5 Free";
       content: "\f004";
