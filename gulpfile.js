@@ -52,7 +52,7 @@ function watch(){
 }
 
 
-const seqdev = gulp.series(makeCss, prefix, minCss);
+const seqdev = gulp.series(makeCss, minCss);
 exports.makeCss = makeCss;
 exports.prefix = prefix;
 exports.minCss = minCss;
