@@ -6,6 +6,20 @@
   background: $color-fond;
 }
 
+h2 {
+  @include titre-section($colour : white);
+}
+h3 {
+  @include titre-section();
+}
+h4 {
+    font-family: map-get($font-family, Shrikhand);
+    font-size: map-get($font-size, logo);
+}
+h4::first-letter {
+  text-transform: uppercase;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -48,7 +62,7 @@
   align-items: center;
   border-radius: 50%;
   background: $color-primary;
-  background: linear-gradient(0deg, $color-secondary 33%, $color-primary 100%);
+  background: linear-gradient(0deg, $color-secondary 0%, $color-primary 90%);
   animation: spin 1.2s linear 0s infinite;
 }
 

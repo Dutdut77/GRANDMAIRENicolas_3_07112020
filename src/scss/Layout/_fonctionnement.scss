@@ -6,9 +6,7 @@
 justify-content: space-around;
          }
     }
-.fonctionnement-titre {
-    @include titre-section($colour : white);
-}
+
 
 .choix {
     @include etiquette ();

@@ -37,15 +37,15 @@
    
   }
 
-  &__titre-heart:hover::before {
-    
+  &__titre-heart:hover::before {    
       font-weight: 900;
       font-family: "Font Awesome 5 Free";
       content: "\f004";
       font-size: 1.6em;
-      background: linear-gradient($color-primary, $color-secondary);
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background : linear-gradient($color-primary, $color-secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color :text;
+      color: transparent;
       cursor: pointer;
       animation : anim-heart 1500ms both;
   }
@@ -198,4 +198,5 @@
     width: 31%;
   }
 }
+
 

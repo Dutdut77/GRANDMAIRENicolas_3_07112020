@@ -55,34 +55,6 @@
   to {
     transform: rotate(359deg); } }
 
-/* Animation Bar
-
-@keyframes anim-bar {
-
-    0% {
-        transform: scaleX(0);
-        transform-origin: left;
-        
-    }
-    17% {
-        transform: scaleX(.18);
-    }
-    24% {
-        transform: scaleX(.4);
-    }
-    46% {
-        transform: scaleX(.81);
-    }
-    85%,100%{
-        opacity: 1;
-    }
-    100% {
-        transform: scaleX(1);
-        transform-origin: left;
-
-    }
-
-}*/
 @keyframes anim-titre {
   0%, 100% {
     transform: translateY(0); }
@@ -120,6 +92,29 @@
   margin: 0;
   padding: 0;
   background: #F6F6F6; }
+
+h2 {
+  margin: 40px 0 20px 20px;
+  justify-content: start;
+  font-family: Robotobold;
+  font-size: 1.3rem;
+  background: white;
+  width: 100%; }
+
+h3 {
+  margin: 40px 0 20px 20px;
+  justify-content: start;
+  font-family: Robotobold;
+  font-size: 1.3rem;
+  background: #F6F6F6;
+  width: 100%; }
+
+h4 {
+  font-family: Shrikhand;
+  font-size: 1.8rem; }
+
+h4::first-letter {
+  text-transform: uppercase; }
 
 .intro {
   display: flex;
@@ -162,7 +157,7 @@
   align-items: center;
   border-radius: 50%;
   background: #9356DC;
-  background: linear-gradient(0deg, #FF79DA 33%, #9356DC 100%);
+  background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%);
   animation: spin 1.2s linear 0s infinite; }
 
 .circle-core {
@@ -368,14 +363,6 @@ footer {
   .fonctionnement {
     justify-content: space-around; } }
 
-.fonctionnement-titre {
-  margin: 40px 0 20px 20px;
-  justify-content: start;
-  font-family: Robotobold;
-  font-size: 1.3rem;
-  background: white;
-  width: 100%; }
-
 .choix {
   display: flex;
   flex-wrap: nowrap;
@@ -454,14 +441,6 @@ footer {
   .restaurants {
     justify-content: space-around; } }
 
-.restaurants-titre {
-  margin: 40px 0 20px 20px;
-  justify-content: start;
-  font-family: Robotobold;
-  font-size: 1.3rem;
-  background: #F6F6F6;
-  width: 100%; }
-
 .resto-card {
   display: flex;
   flex-wrap: wrap;
@@ -509,7 +488,7 @@ footer {
       content: "\f004";
       font-size: 1.6em;
       background: linear-gradient(#9356DC, #FF79DA);
-      background-clip: text;
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       cursor: pointer;
       animation: anim-heart 1500ms both; }
@@ -575,8 +554,9 @@ footer {
     content: "\f004";
     font-size: 1.6em;
     background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: text;
+    color: transparent;
     cursor: pointer;
     animation: anim-heart 1500ms both; }
 
