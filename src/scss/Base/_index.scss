@@ -7,17 +7,44 @@
 }
 
 h2 {
-  @include titre-section($colour : white);
+  @include titre-section($colour: white);
 }
 h3 {
   @include titre-section();
 }
 h4 {
-    font-family: map-get($font-family, Shrikhand);
-    font-size: map-get($font-size, logo);
+  font-family: map-get($font-family, Shrikhand);
+  font-size: map-get($font-size, logo);
 }
 h4::first-letter {
   text-transform: uppercase;
+}
+
+.img-one {
+  background-image: url(../images/1-medium.jpg);
+  @media (min-width: 768px) {
+    background-image: url(../images/1.jpg);
+  }
+
+}
+.img-two {
+  background-image: url(../images/2-medium.jpg);
+  @media (min-width: 768px) {
+    background-image: url(../images/2.jpg);
+  }
+}
+.img-three {
+  background-image: url(../images/3-medium.jpg);
+  @media (min-width: 768px) {
+    background-image: url(../images/3.jpg);
+  }
+}
+.img-four {
+  background-image: url(../images/4-medium.jpg);
+  @media (min-width: 768px) {
+    background-image: url(../images/4.jpg);
+  }
+
 }
 
 .intro {
@@ -34,7 +61,7 @@ h4::first-letter {
   animation: loader 3000ms both;
   animation-iteration-count: 1;
   overflow: hidden;
-} 
+}
 
 .spinner-box {
   width: 105px;
@@ -51,8 +78,8 @@ h4::first-letter {
   background-color: #f5edff;
   font-family: map-get($font-family, Shrikhand);
   font-size: 2rem;
- padding : 0 10px 0 10px;
-} 
+  padding: 0 10px 0 10px;
+}
 .circle-border {
   width: 95px;
   height: 95px;
@@ -131,7 +158,7 @@ main {
 .space {
   height: 60px;
   width: 100%;
- }
+}
 
 a {
   color: white;
